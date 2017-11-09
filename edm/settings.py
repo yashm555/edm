@@ -25,7 +25,7 @@ SECRET_KEY = 'u$8&ru95x^x@7lnw1#bl!m*xk+mdbtpq0q!9qq_(4%55azjlb)'
 TEST_RUNNER = 'edm.heroku_test_runner.HerokuDiscoverRunner'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -85,7 +85,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 STATIC_ROOT =os.path.join(PROJECT_ROOT, 'static')
-STATIC_URL = '/static/'
+STATIC_URL = '/edm/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
   #  os.path.join(BASE_DIR,'edm', 'staticfiles'),
