@@ -84,12 +84,10 @@ WSGI_APPLICATION = 'edm.wsgi.application'
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 
-STATIC_ROOT ='static' #os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT =os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-    os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR,'edm', 'staticfiles'),
     os.path.join(BASE_DIR,'edm', 'static'),
 )
