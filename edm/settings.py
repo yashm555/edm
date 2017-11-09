@@ -88,8 +88,8 @@ STATIC_ROOT =os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,'edm', 'staticfiles'),
-    os.path.join(BASE_DIR,'edm', 'static'),
+  #  os.path.join(BASE_DIR,'edm', 'staticfiles'),
+   # os.path.join(BASE_DIR,'edm', 'static'),
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
