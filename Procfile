@@ -1,1 +1,1 @@
-web: gunicorn edm.wsgi --log-file -
+web: python edm/manage.py collectstatic --noinput; gunicorn edm.wsgi --log-file -
